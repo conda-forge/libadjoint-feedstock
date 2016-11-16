@@ -35,7 +35,6 @@ conda search libadjoint --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
