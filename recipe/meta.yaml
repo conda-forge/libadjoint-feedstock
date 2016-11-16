@@ -2,6 +2,7 @@
 {% set sha256 = "ae61f0d5112b12f1da2f25d11a2b8ebce2007a2554c346172e1c62e3d240b047" %}
 
 {% set petsc_version = '3.7.*' %}
+{% set slepc_version = '3.7.*' %}
 
 package:
   name: libadjoint
@@ -22,11 +23,13 @@ requirements:
     - cmake
     - toolchain
     - mpich
-    - petsc {{ petsc_version }} 
+    - petsc {{ petsc_version }}
+    - slepc {{ slepc_version }}
   run:
     - python
     - mpich
-    - petsc {{ petsc_version }} 
+    - petsc {{ petsc_version }}
+    - slepc {{ slepc_version }}
 
 test:
   imports:
