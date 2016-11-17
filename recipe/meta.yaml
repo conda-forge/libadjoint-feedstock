@@ -2,6 +2,7 @@
 {% set sha256 = "ae61f0d5112b12f1da2f25d11a2b8ebce2007a2554c346172e1c62e3d240b047" %}
 
 {% set petsc_version = '3.7.*' %}
+{% set slepc_version = '3.7.*' %}
 
 package:
   name: libadjoint
@@ -13,7 +14,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py3k]
 
 requirements:
@@ -22,11 +23,13 @@ requirements:
     - cmake
     - toolchain
     - mpich
-    - petsc {{ petsc_version }} 
+    - petsc {{ petsc_version }}
+    - slepc {{ slepc_version }}
   run:
     - python
     - mpich
-    - petsc {{ petsc_version }} 
+    - petsc {{ petsc_version }}
+    - slepc {{ slepc_version }}
 
 test:
   imports:
@@ -34,7 +37,7 @@ test:
 
 about:
   home: http://www.dolfin-adjoint.org/
-  license: LGPL 3
+  license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE
   summary: 'library for the high-level algorithmic differentiation of scientific models'

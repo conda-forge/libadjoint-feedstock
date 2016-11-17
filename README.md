@@ -3,7 +3,7 @@ About libadjoint
 
 Home: http://www.dolfin-adjoint.org/
 
-Package license: LGPL 3
+Package license: LGPL-3.0
 
 Feedstock license: BSD 3-Clause
 
@@ -33,7 +33,6 @@ It is possible to list all of the versions of `libadjoint` available on your pla
 ```
 conda search libadjoint --channel conda-forge
 ```
-
 
 
 About conda-forge
