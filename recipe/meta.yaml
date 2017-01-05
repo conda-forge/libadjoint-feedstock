@@ -30,6 +30,8 @@ requirements:
     - mpich
     - petsc {{ petsc_version }}
     - slepc {{ slepc_version }}
+    - six
+    - numpy
 
 test:
   imports:
