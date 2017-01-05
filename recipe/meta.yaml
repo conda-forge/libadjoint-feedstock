@@ -1,5 +1,5 @@
 {% set version = "2016.2.0" %}
-{% set sha256 = "42545d918a74b1c145d86bba30a4db03cd40f1c93d1303cbdb5bdfc75f8ca63b" %}
+{% set sha256 = "b2c03fa9314180c2aae165a2613056a1bbc5b399778c1fc53a033507f8f746b1" %}
 
 {% set petsc_version = '3.7.*' %}
 {% set slepc_version = '3.7.*' %}
