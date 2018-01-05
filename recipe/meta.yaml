@@ -1,8 +1,8 @@
-{% set version = "2017.1.0" %}
-{% set sha256 = "a7436cb2f581dbf0ee94625274b76fff2529a7ae9fbea81699538d20cdcb202b" %}
+{% set version = "2017.2.0" %}
+{% set sha256 = "01f49c13f07a1ae3f2f28c2a8890b41ac53ab4bdc31073fab9cece85e25f794d" %}
 
-{% set petsc_version = '3.7.*' %}
-{% set slepc_version = '3.7.*' %}
+{% set petsc_version = '3.8.*' %}
+{% set slepc_version = '3.8.*' %}
 
 package:
   name: libadjoint
