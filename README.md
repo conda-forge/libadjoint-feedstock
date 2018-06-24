@@ -16,14 +16,16 @@ scientific models. It's mainly used by dolfin-adjoint.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libadjoint-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/libadjoint-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/libadjoint-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libadjoint-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libadjoint-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libadjoint-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/libadjoint-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libadjoint-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libadjoint/badges/version.svg)](https://anaconda.org/conda-forge/libadjoint)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libadjoint/badges/downloads.svg)](https://anaconda.org/conda-forge/libadjoint)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libadjoint-green.svg)](https://anaconda.org/conda-forge/libadjoint) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libadjoint.svg)](https://anaconda.org/conda-forge/libadjoint) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libadjoint.svg)](https://anaconda.org/conda-forge/libadjoint) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libadjoint.svg)](https://anaconda.org/conda-forge/libadjoint) |
 
 Installing libadjoint
 =====================
