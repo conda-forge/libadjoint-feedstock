@@ -13,26 +13,28 @@ cxx_compiler:
 cxx_compiler_version:
 - '9'
 docker_image:
-- condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-comp7
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
 - '9'
 mpich:
-- '3.3'
+- '3'
 petsc:
-- '3.13'
+- '3.14'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.6.* *_cpython
+- 3.8.* *_cpython
 slepc:
-- '3.13'
+- '3.14'
 target_platform:
 - linux-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
   - fortran_compiler_version
+- - cdt_name
+  - docker_image
