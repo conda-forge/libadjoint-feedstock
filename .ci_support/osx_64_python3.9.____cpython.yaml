@@ -5,7 +5,7 @@ c_compiler:
 c_compiler_version:
 - '11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -21,7 +21,7 @@ macos_machine:
 mpich:
 - '3'
 petsc:
-- '3.14'
+- '3.16'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -29,7 +29,7 @@ pin_run_as_build:
 python:
 - 3.9.* *_cpython
 slepc:
-- '3.14'
+- '3.16'
 target_platform:
 - osx-64
 zip_keys:
