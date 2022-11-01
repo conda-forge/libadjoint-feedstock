@@ -1,14 +1,12 @@
 {% set version = "2017.2.0" %}
-{% set sha256 = "01f49c13f07a1ae3f2f28c2a8890b41ac53ab4bdc31073fab9cece85e25f794d" %}
 
 package:
   name: libadjoint
   version: {{ version }}
 
 source:
-  fn: libadjoint-{{ version }}.tar.gz
   url: https://bitbucket.org/dolfin-adjoint/libadjoint/downloads/libadjoint-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 01f49c13f07a1ae3f2f28c2a8890b41ac53ab4bdc31073fab9cece85e25f794d
 
 build:
   number: 1013
@@ -40,7 +38,7 @@ test:
 
 about:
   home: http://www.dolfin-adjoint.org/
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
   summary: 'library for the high-level algorithmic differentiation of scientific models'
