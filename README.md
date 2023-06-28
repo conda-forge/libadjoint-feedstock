@@ -1,11 +1,11 @@
-About libadjoint
-================
+About libadjoint-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libadjoint-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.dolfin-adjoint.org/
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libadjoint-feedstock/blob/main/LICENSE.txt)
 
 Summary: library for the high-level algorithmic differentiation of scientific models
 
