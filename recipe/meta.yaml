@@ -7,9 +7,11 @@ package:
 source:
   url: https://bitbucket.org/dolfin-adjoint/libadjoint/downloads/libadjoint-{{ version }}.tar.gz
   sha256: 01f49c13f07a1ae3f2f28c2a8890b41ac53ab4bdc31073fab9cece85e25f794d
+  patches:
+    - setuptools.patch
 
 build:
-  number: 1015
+  number: 1016
   skip: true  # [win]
 
 requirements:
@@ -24,6 +26,7 @@ requirements:
     - mpich
     - petsc
     - slepc
+    - setuptools
   run:
     - python
     - mpich
@@ -37,7 +40,7 @@ test:
     - libadjoint
 
 about:
-  home: http://www.dolfin-adjoint.org/
+  home: https://www.dolfin-adjoint.org
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
@@ -46,7 +49,7 @@ about:
   description: |
     libadjoint is a library for the high-level algorithmic differentiation of
     scientific models. It's mainly used by dolfin-adjoint.
-  doc_url: http://www.dolfin-adjoint.org/en/latest/documentation/index.html
+  doc_url: https://www.dolfin-adjoint.org/en/latest/documentation/index.html
   dev_url: https://bitbucket.org/dolfin-adjoint/libadjoint
 
 extra:
