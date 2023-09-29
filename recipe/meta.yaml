@@ -37,7 +37,7 @@ test:
     - libadjoint
 
 about:
-  home: http://www.dolfin-adjoint.org/
+  home: https://www.dolfin-adjoint.org
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
@@ -46,7 +46,7 @@ about:
   description: |
     libadjoint is a library for the high-level algorithmic differentiation of
     scientific models. It's mainly used by dolfin-adjoint.
-  doc_url: http://www.dolfin-adjoint.org/en/latest/documentation/index.html
+  doc_url: https://www.dolfin-adjoint.org/en/latest/documentation/index.html
   dev_url: https://bitbucket.org/dolfin-adjoint/libadjoint
 
 extra:
