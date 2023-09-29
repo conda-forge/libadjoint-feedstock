@@ -1,0 +1,47 @@
+From 7247288d4ece3d864cec59d352eb82a01a9020ca Mon Sep 17 00:00:00 2001
+From: Min RK <benjaminrk@gmail.com>
+Date: Fri, 29 Sep 2023 11:19:17 +0200
+Subject: [PATCH] install with setuptools
+
+distutils is deprecated for some time and removed in Python 3.12
+---
+ python/CMakeLists.txt | 2 +-
+ python/setup.py       | 2 +-
+ python/setup.py.in    | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/python/CMakeLists.txt b/python/CMakeLists.txt
+index 523540f..99f4826 100644
+--- a/python/CMakeLists.txt
++++ b/python/CMakeLists.txt
+@@ -23,6 +23,6 @@ if(PYTHONINTERP_FOUND)
+ 
+     # Run `python setup.py install`
+     install(CODE
+-        "execute_process(COMMAND ${PYTHON_EXECUTABLE} ${SETUP_PY} install --prefix=${CMAKE_INSTALL_PREFIX} ${LIBADJOINT_PYTHON_INSTALL_ARGS})"
++        "execute_process(COMMAND ${PYTHON_EXECUTABLE} ${SETUP_PY} install --single-version-externally-managed --record record.txt --prefix=${CMAKE_INSTALL_PREFIX} ${LIBADJOINT_PYTHON_INSTALL_ARGS})"
+            )
+ endif()
+diff --git a/python/setup.py b/python/setup.py
+index c3c1d16..4057825 100644
+--- a/python/setup.py
++++ b/python/setup.py
+@@ -1,4 +1,4 @@
+-from distutils.core import setup, Extension
++from setuptools import setup, Extension
+ 
+ setup (name = 'libadjoint',
+        version = '2017.2.0',
+diff --git a/python/setup.py.in b/python/setup.py.in
+index 031e763..f8af099 100644
+--- a/python/setup.py.in
++++ b/python/setup.py.in
+@@ -1,4 +1,4 @@
+-from distutils.core import setup
++from setuptools import setup
+ 
+ setup (name = 'libadjoint',
+        version = '${libadjoint_VERSION}',
+-- 
+2.41.0
+
