@@ -1,0 +1,26 @@
+From 1cc02a6df61789c1d21be2e59f03bec6c7906874 Mon Sep 17 00:00:00 2001
+From: Min RK <benjaminrk@gmail.com>
+Date: Mon, 30 Oct 2023 13:21:11 +0100
+Subject: [PATCH] cast EPSMonitorAll function pointer
+
+---
+ src/adj_eps.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/adj_eps.c b/src/adj_eps.c
+index bfe9be9..52efaff 100644
+--- a/src/adj_eps.c
++++ b/src/adj_eps.c
+@@ -139,7 +139,8 @@ int adj_compute_eps(adj_adjointer* adjointer, adj_matrix matrix, adj_eps_options
+ 
+   EPSSetDimensions(*eps, options.neigenpairs, PETSC_DECIDE, PETSC_DECIDE);
+ #if SLEPC_VERSION_MAJOR > 3 || (SLEPC_VERSION_MAJOR == 3 && SLEPC_VERSION_MINOR >= 1)
+-  if (options.monitor) EPSMonitorSet(*eps, EPSMonitorAll, PETSC_NULL, PETSC_NULL);
++  if (options.monitor) EPSMonitorSet(*eps, (PetscErrorCode (*)(EPS,PetscInt,PetscInt,PetscScalar*,PetscScalar*,
++                                             PetscReal*,PetscInt,void*))EPSMonitorAll, PETSC_NULL, PETSC_NULL);
+ #endif
+   EPSSetWhichEigenpairs(*eps, (EPSWhich) options.which);
+ 
+-- 
+2.42.0
+
