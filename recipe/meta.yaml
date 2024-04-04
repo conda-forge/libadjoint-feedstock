@@ -11,7 +11,7 @@ source:
     - epsmonitorall.patch
 
 build:
-  number: 1016
+  number: 1017
   skip: true  # [win]
 
 requirements:
